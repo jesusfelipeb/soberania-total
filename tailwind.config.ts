@@ -10,10 +10,10 @@ const config: Config = {
     extend: {
       colors: {
         dark: {
-          DEFAULT: "#0a0a0a",
-          card: "#111111",
-          light: "#1a1a1a",
-          border: "#222222",
+          DEFAULT: "#050505",
+          card: "#0f0f0f",
+          light: "#151515",
+          border: "#1a1a1a",
         },
         neon: {
           DEFAULT: "#00FF88",

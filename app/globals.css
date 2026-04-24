@@ -3,14 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --background: #0a0a0a;
+  --background: #050505;
   --foreground: #ffffff;
+  --accent: #00ff88;
+  --card-bg: rgba(15, 15, 15, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-border-hover: rgba(0, 255, 136, 0.5);
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -20,4 +26,48 @@ html {
 ::selection {
   background: rgba(0, 255, 136, 0.3);
   color: #ffffff;
+}
+
+@layer components {
+  .glass-card {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.035) 0%,
+        rgba(255, 255, 255, 0.01) 100%
+      ),
+      var(--card-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    transition:
+      border-color 500ms ease,
+      box-shadow 500ms ease,
+      transform 500ms ease;
+  }
+
+  .glass-card-hover:hover {
+    border-color: var(--glass-border-hover);
+    box-shadow: 0 0 40px rgba(0, 255, 136, 0.1);
+  }
+
+  .glass-card-accent {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(0, 255, 136, 0.06) 0%,
+        rgba(0, 255, 136, 0.015) 100%
+      ),
+      var(--card-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 255, 136, 0.25);
+    box-shadow: 0 0 40px rgba(0, 255, 136, 0.08);
+  }
+}
+
+@layer utilities {
+  .tracking-luxury {
+    letter-spacing: 0.08em;
+  }
 }
