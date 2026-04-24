@@ -110,7 +110,7 @@ NEXT_PUBLIC_GA_ID=                     # Google Analytics ID
 
 ---
 
-## Estado actual (2026-04-02)
+## Estado actual (2026-04-24)
 
 ### Completado
 - [x] Rebuild completo: de marca personal a sitio de conversión/servicios
@@ -122,22 +122,50 @@ NEXT_PUBLIC_GA_ID=                     # Google Analytics ID
 - [x] Repo GitHub: jesusfelipeb/soberania-total
 - [x] Auto-deploy conectado (push a main → deploy automático)
 - [x] API newsletter Beehiiv funcionando (/api/newsletter)
+- [x] **Foto de perfil nueva** (B&W profesional) en Hero + Credibility
+- [x] **Favicon custom** — "F" verde neón generado en `app/icon.tsx` (ImageResponse)
+- [x] **OG image dinámica** — 1200×630 con foto + tagline en `app/opengraph-image.tsx`
+- [x] **Google Analytics 4** integrado vía `next/script` (GA_ID: G-H2MFGEKE6S, cargado en Vercel)
+- [x] **Rediseño "Luxury Tech Obsidian"** — sistema `.glass-card`, fondo `#050505`, íconos thin-stroke, contraste bold/light en headlines, gradientes radiales, transiciones 500ms
 
 ### Pendiente (técnico)
 - [ ] Dominio propio (conectar en Vercel)
-- [ ] Google Analytics (agregar GA_ID en env vars de Vercel)
 - [ ] Formulario de contacto backup (nombre, servicio, presupuesto)
 - [ ] Página /portfolio con trabajos detallados
-- [ ] Optimización de imágenes (favicon personalizado, OG image para compartir)
-- [ ] Limpiar componentes legacy que no se usan
+- [ ] Limpiar componentes legacy que no se usan (SobreMi, Pilares, LinksProductos, Newsletter, StarField)
 - [ ] Automatizar chat de WhatsApp de Banana Express (pendiente del cliente)
+- [ ] Considerar borrar `felipe.jpg` legacy si no se necesita (foto vieja, aún en /public/assets)
 
-### Pendiente (negocio/ventas)
+### Pendiente (negocio/ventas) — LA PRIORIDAD REAL
 - [ ] Mensajes directos a contactos ofreciendo servicios
 - [ ] Publicar en grupos de Facebook de emprendedores
 - [ ] Activar LinkedIn para venta local
 - [ ] Documentar caso Kim Cedeño con métricas reales
 - [ ] Primer Reel de presentación
+
+---
+
+## Sistema de diseño actual (post 2026-04-24)
+
+**Estética:** Luxury Tech Obsidian — fondo obsidiana profundo + acento esmeralda + glassmorphism.
+
+**Tokens:**
+- Background: `#050505` (obsidian)
+- Accent: `#00FF88` (emerald glow)
+- Card bg: `rgba(15, 15, 15, 0.7)`
+- Glass border: `rgba(255, 255, 255, 0.08)` → hover `rgba(0, 255, 136, 0.5)`
+
+**Clases clave (en `app/globals.css`):**
+- `.glass-card` — blur(12px) + gradiente interno sutil + borde blanco translúcido
+- `.glass-card-hover` — al hover el borde pasa a esmeralda + glow
+- `.glass-card-accent` — variante para la tarjeta "Más popular"
+- `.tracking-luxury` — letter-spacing 0.08em para labels uppercase
+
+**Patrones:**
+- Headlines con contraste weight: `font-light` + `font-black` (ej. "Hago sitios web" / "que venden.")
+- Íconos thin-stroke (strokeWidth 1.25)
+- Transiciones `duration-500` en hover states
+- Gradientes radiales sutiles para dar profundidad a secciones
 
 ---
 

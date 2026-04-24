@@ -2,21 +2,26 @@
 
 **Objetivo:** Generar $600 USD en 10 días vendiendo servicios.
 **Fecha inicio:** 2026-04-01
+**Última actualización:** 2026-04-24
 **Sitio live:** https://soberania-total.vercel.app
 
 ---
 
-## FASE 1: VENTA INMEDIATA (Días 1-5) ← ESTÁS ACÁ
+## FASE 1: VENTA INMEDIATA ← ACÁ SEGUIMOS ESTANCADOS
 
-### Sitio web (técnico)
+El sitio está listo. La barrera es comercial, no técnica.
+
+### Sitio web (técnico) — ya casi todo hecho
 - [ ] Conectar dominio propio en Vercel (si tenés uno)
-- [ ] Agregar Google Analytics (crear GA_ID → env vars en Vercel)
-- [ ] Crear OG image para que el link se vea bien al compartir en redes/WhatsApp
-- [ ] Favicon personalizado (reemplazar el default de Next.js)
+- [x] Google Analytics conectado (GA_ID: G-H2MFGEKE6S, env var cargada en Vercel)
+- [x] OG image generada dinámicamente (app/opengraph-image.tsx)
+- [x] Favicon personalizado "F" verde neón (app/icon.tsx)
+- [x] Foto de perfil nueva (B&W profesional) en Hero + Credibility
+- [x] Rediseño "Luxury Tech Obsidian" completo (glass-card, fondo #050505)
 - [ ] Revisar sitio en celular real y ajustar si hay problemas mobile
 - [ ] Agregar formulario de contacto backup (para quien no use WhatsApp)
 
-### Ventas directas (esto genera los $600)
+### Ventas directas (esto genera los $600) — NO EMPEZÓ
 - [ ] Escribir mensaje de venta corto para WhatsApp (30 segundos de lectura)
 - [ ] Mandar mensaje a 20+ contactos que tengan negocio
 - [ ] Publicar oferta en 5+ grupos de Facebook de emprendedores BA
@@ -26,7 +31,7 @@
 
 ---
 
-## FASE 2: CREDIBILIDAD (Días 5-15)
+## FASE 2: CREDIBILIDAD
 
 ### Contenido
 - [ ] Documentar caso Kim Cedeño con screenshots y métricas reales
@@ -39,10 +44,11 @@
 - [ ] Página /portfolio con capturas de pantalla de trabajos reales
 - [ ] Agregar testimonios reales de Kim Cedeño / otros clientes
 - [ ] Mejorar casos de éxito con imágenes/screenshots
+- [ ] Limpiar componentes legacy (SobreMi, Pilares, LinksProductos, Newsletter, StarField)
 
 ---
 
-## FASE 3: ESCALAR (Días 15-30)
+## FASE 3: ESCALAR
 
 ### Automatización
 - [ ] Automatizar chat WhatsApp de Banana Express (ManyChat o similar)
@@ -79,6 +85,8 @@
 - ✅ GitHub: github.com/jesusfelipeb/soberania-total
 - ✅ Auto-deploy: push a main → Vercel deploya solo
 - ✅ API newsletter Beehiiv funcionando
+- ✅ Google Analytics activo (GA_ID: G-H2MFGEKE6S)
+- ✅ OG image + favicon custom
 
 ---
 
@@ -88,3 +96,4 @@
 - Cada mejora técnica debe justificarse con "¿esto me acerca a una venta?"
 - WhatsApp es el canal #1 — no complicar el funnel
 - Precio mínimo: $200 por proyecto — no regalar trabajo
+- El rediseño visual del 24-abr NO trae ventas por sí solo — solo mejora primera impresión. La siguiente sesión debería enfocarse 100% en outbound comercial.
