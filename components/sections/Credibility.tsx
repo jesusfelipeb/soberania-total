@@ -16,7 +16,7 @@ export default function Credibility() {
         <div className="flex-shrink-0">
           <div className="relative h-72 w-72 overflow-hidden rounded-2xl border border-dark-border sm:h-80 sm:w-80">
             <Image
-              src="/assets/felipe.jpg"
+              src="/assets/fotoperfil.jpg"
               alt="Felipe"
               fill
               className="object-cover"

@@ -15,7 +15,7 @@ export default function Hero() {
         <div className="flex-shrink-0">
           <div className="relative h-48 w-48 overflow-hidden rounded-full border-2 border-neon/30 shadow-[0_0_40px_rgba(0,255,136,0.15)] sm:h-56 sm:w-56">
             <Image
-              src="/assets/felipe.jpg"
+              src="/assets/fotoperfil.jpg"
               alt="Felipe — Desarrollo Web e IA"
               fill
               className="object-cover"
