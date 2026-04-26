@@ -5,7 +5,7 @@ import CaseStudies from "@/components/sections/CaseStudies";
 import Credibility from "@/components/sections/Credibility";
 import CTAFinal from "@/components/sections/CTAFinal";
 import Footer from "@/components/layout/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
+import ChatWidget from "@/components/ChatWidget";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <Credibility />
       <CTAFinal />
       <Footer />
-      <WhatsAppButton />
+      <ChatWidget />
     </>
   );
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
@@ -9,16 +9,23 @@ const inter = Inter({
   display: "swap",
 });
 
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+  weight: ["300", "500", "700"],
+});
+
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export const metadata: Metadata = {
-  title: "Felipe — Sitios Web, Automatización IA y Asesoría Financiera",
+  title: "Felipe — Sitios Web, Automatización IA y Consultoría Financiera",
   description:
     "Hago sitios web que venden, automatizo tu negocio con IA, y te enseño a proteger tu dinero. Resultados reales en 2 semanas.",
   openGraph: {
-    title: "Felipe — Desarrollo Web, IA y Asesoría Financiera",
+    title: "Felipe — Desarrollo Web, IA y Consultoría Financiera",
     description:
-      "Sitios web profesionales, chatbots con IA y asesoría financiera 1-a-1. Contactame por WhatsApp.",
+      "Sitios web profesionales, chatbots con IA y consultoría financiera 1-a-1. Contactame por WhatsApp.",
     type: "website",
   },
 };
@@ -30,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased`}>
         {children}
         {GA_ID && (
           <>

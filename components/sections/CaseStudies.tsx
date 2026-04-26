@@ -27,7 +27,7 @@ const cases = [
 
 export default function CaseStudies() {
   return (
-    <section className="bg-dark-card py-16 sm:py-24">
+    <section id="casos" className="bg-dark-card py-16 sm:py-24">
       <div className="mx-auto max-w-5xl px-6">
         <p className="mb-3 text-center text-sm font-medium uppercase tracking-widest text-neon">
           Resultados reales
