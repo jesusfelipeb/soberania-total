@@ -5,12 +5,21 @@
 
 export const WHATSAPP_NUMBER = "5491132924310";
 
+// La URL final viene de NEXT_PUBLIC_SITE_URL (Vercel env var).
+// El fallback se usa solo si la env var no está cargada.
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://jesusfelipeb.vercel.app";
+
 export const SITE_CONFIG = {
-  name: "Felipe",
-  title: "Felipe — Desarrollo Web, IA y Consultoría Financiera",
+  name: "Felipe Becerra",
+  title: "Felipe Becerra — Desarrollo Web, IA y Consultoría Financiera",
   description:
-    "Sitios web que venden, automatización con IA y consultoría financiera. Resultados reales en 2 semanas.",
-  url: "https://jesusfelipeb.com",
+    "Desarrollo web freelance en Buenos Aires. Sitios web profesionales desde $80, agentes de IA para WhatsApp, y consultoría financiera para emprendedores y pymes.",
+  url: SITE_URL,
+  locale: "es_AR",
+  city: "Buenos Aires",
+  region: "Ciudad Autónoma de Buenos Aires",
+  country: "AR",
 };
 
 export const SOCIAL_LINKS = {

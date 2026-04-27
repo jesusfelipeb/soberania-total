@@ -2,8 +2,9 @@
 
 **Objetivo:** Generar $600 USD en 10 días vendiendo servicios.
 **Fecha inicio:** 2026-04-01
-**Última actualización:** 2026-04-24
-**Sitio live:** https://soberania-total.vercel.app
+**Última actualización:** 2026-04-26
+**Sitio live:** https://jesusfelipeb.vercel.app
+**Repo (no se renombró):** github.com/jesusfelipeb/soberania-total
 
 ---
 
@@ -12,20 +13,28 @@
 El sitio está listo. La barrera es comercial, no técnica.
 
 ### Sitio web (técnico) — ya casi todo hecho
-- [ ] Conectar dominio propio en Vercel (si tenés uno)
-- [x] Google Analytics conectado (GA_ID: G-H2MFGEKE6S, env var cargada en Vercel)
-- [x] OG image generada dinámicamente (app/opengraph-image.tsx)
-- [x] Favicon personalizado "F" verde neón (app/icon.tsx)
-- [x] Foto de perfil nueva (B&W profesional) en Hero + Credibility
-- [x] Rediseño "Luxury Tech Obsidian" completo (glass-card, fondo #050505)
-- [ ] Revisar sitio en celular real y ajustar si hay problemas mobile
-- [ ] Agregar formulario de contacto backup (para quien no use WhatsApp)
+- [ ] **Renombrar proyecto en Vercel a `jesusfelipeb`** (Settings → General)
+- [ ] **Configurar `NEXT_PUBLIC_SITE_URL` en Vercel** post-rename
+- [ ] Conectar dominio propio en Vercel (jesusfelipeb.com / .com.ar / .dev)
+- [ ] **Verificar Google Search Console** y enviar sitemap.xml
+- [ ] **Crear Google Business Profile** (Maps + local SEO + reviews)
+- [x] Google Analytics conectado (G-H2MFGEKE6S)
+- [x] OG image dinámica + favicon custom
+- [x] Foto de perfil nueva (B&W profesional)
+- [x] Rediseño "Luxury Tech Obsidian"
+- [x] **Hero rediseñado nivel 3** (Space Grotesk, headline rotativo, aurora, mockup, marquee, tarjeta flotante)
+- [x] **Servicios con copy legalmente seguro** (consultoría, no asesoría) y precios actualizados ($80/$600/$70)
+- [x] **Chat Widget con IA** — Groq Llama 3.3 70B, streaming, lead detection, handover WhatsApp
+- [x] **SEO técnico profesional** — JSON-LD, sitemap, robots, metadata completa
+- [ ] Revisar sitio en celular real
+- [ ] Agregar formulario de contacto backup
+- [ ] (Opcional) Apps Script Web App + Google Sheets para capturar leads
 
 ### Ventas directas (esto genera los $600) — NO EMPEZÓ
 - [ ] Escribir mensaje de venta corto para WhatsApp (30 segundos de lectura)
 - [ ] Mandar mensaje a 20+ contactos que tengan negocio
 - [ ] Publicar oferta en 5+ grupos de Facebook de emprendedores BA
-- [ ] Publicar en LinkedIn: "Hago sitios web en 2 semanas por $300"
+- [ ] Publicar en LinkedIn: "Hago sitios web en 14 días desde $80"
 - [ ] Buscar grupos de Telegram de freelancers/emprendedores LATAM
 - [ ] Preparar 1 propuesta tipo para responder rápido cuando alguien pregunte
 
@@ -80,9 +89,10 @@ El sitio está listo. La barrera es comercial, no técnica.
 
 ## RECURSOS LISTOS
 
-- ✅ Sitio web live: soberania-total.vercel.app
+- ✅ Sitio web live: jesusfelipeb.vercel.app (post-rename en Vercel)
 - ✅ WhatsApp configurado: +5491132924310
-- ✅ GitHub: github.com/jesusfelipeb/soberania-total
+- ✅ Chat IA en producción (Groq + streaming)
+- ✅ GitHub: github.com/jesusfelipeb/soberania-total (repo NO se renombra)
 - ✅ Auto-deploy: push a main → Vercel deploya solo
 - ✅ API newsletter Beehiiv funcionando
 - ✅ Google Analytics activo (GA_ID: G-H2MFGEKE6S)
@@ -95,5 +105,6 @@ El sitio está listo. La barrera es comercial, no técnica.
 - El sitio NO es para marca personal aún — es herramienta de venta
 - Cada mejora técnica debe justificarse con "¿esto me acerca a una venta?"
 - WhatsApp es el canal #1 — no complicar el funnel
-- Precio mínimo: $200 por proyecto — no regalar trabajo
-- El rediseño visual del 24-abr NO trae ventas por sí solo — solo mejora primera impresión. La siguiente sesión debería enfocarse 100% en outbound comercial.
+- Precio mínimo Web: $80 USD (entry-level landing). Automatización: $600. Consultoría: $70/sesión.
+- "Consultoría" SIEMPRE — nunca "asesoría" (regulación de servicios financieros).
+- El sitio + chat IA + SEO técnico están listos. La siguiente sesión debería enfocarse 100% en outbound comercial + Google Business Profile + Search Console.
