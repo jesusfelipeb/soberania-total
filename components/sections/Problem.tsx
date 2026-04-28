@@ -42,7 +42,7 @@ export default function Problem() {
           />
         </svg>
       ),
-      text: "Perdés horas respondiendo mensajes",
+      text: "Pierdes horas respondiendo mensajes",
       sub: "Preguntas repetitivas, citas sin confirmar, leads que se enfrían.",
     },
     {
@@ -62,7 +62,7 @@ export default function Problem() {
           />
         </svg>
       ),
-      text: "Sabés que necesitás crecer, pero no sabés cómo",
+      text: "Sabes que necesitas crecer, pero no sabes cómo",
       sub: "Información hay de sobra. Lo que falta es una estrategia clara.",
     },
   ];

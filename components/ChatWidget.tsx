@@ -92,7 +92,7 @@ export default function ChatWidget() {
         }
       } catch (err) {
         if ((err as Error).name === "AbortError") return;
-        setError("Hubo un error. Probá de nuevo o escribime por WhatsApp.");
+        setError("Hubo un error. Prueba de nuevo o escríbeme por WhatsApp.");
         setMessages((prev) => prev.slice(0, -1));
       } finally {
         setIsLoading(false);
@@ -137,7 +137,7 @@ export default function ChatWidget() {
           <span className="whitespace-nowrap">
             ¿Alguna duda?{" "}
             <strong className="font-semibold text-neon">
-              Hablá con mi agente
+              Habla con mi agente
             </strong>
           </span>
           {/* Pointer triangle to FAB */}
@@ -255,7 +255,7 @@ export default function ChatWidget() {
               <div className="rounded-2xl rounded-tl-sm border border-white/[0.06] bg-white/[0.02] px-4 py-3">
                 <p className="text-sm leading-relaxed text-white/85">
                   Hola, soy el asistente de Felipe. Te puedo contar sobre los
-                  servicios, precios y cómo trabajamos. ¿Qué necesitás?
+                  servicios, precios y cómo trabajamos. ¿Qué necesitas?
                 </p>
               </div>
 
@@ -333,7 +333,7 @@ export default function ChatWidget() {
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Escribí tu pregunta…"
+            placeholder="Escribe tu pregunta…"
             disabled={isLoading}
             maxLength={500}
             className="flex-1 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-3 text-sm text-white placeholder:text-white/30 focus:border-neon/40 focus:outline-none focus:ring-1 focus:ring-neon/20 disabled:opacity-50"

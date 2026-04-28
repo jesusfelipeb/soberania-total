@@ -36,7 +36,7 @@ soberania-total/
 │   │   ├── newsletter/       → Endpoint Beehiiv
 │   │   └── chat/route.ts     → Endpoint streaming a Groq + lead detection (Edge runtime)
 │   ├── layout.tsx            → Layout con Inter + Space Grotesk, metadata SEO completa, JSON-LD
-│   ├── sitemap.ts            → Sitemap dinámico (/sitemap.xml)
+│   ├── sitemap.ts            → Sitemap dinámico (/sitemap.xml) — solo home, sin fragmentos
 │   ├── robots.ts             → robots.txt dinámico
 │   ├── opengraph-image.tsx   → OG image 1200×630 dinámica
 │   ├── icon.tsx              → Favicon "F" verde neón
@@ -136,16 +136,18 @@ NEXT_PUBLIC_GOOGLE_VERIFICATION=         # opcional — código de Google Search
 
 ---
 
-## Estado actual (2026-04-26)
+## Estado actual (2026-04-27)
 
-### Completado en esta sesión
+### Completado en esta sesión (2026-04-27)
+- [x] **Sitemap fix** — quitadas las URLs con fragmento (`#servicios`, `#casos`) que Google rechaza por no ser canónicas. Sitemap ahora tiene solo la home. Commit `d398494`.
+- [x] **Sitemap enviado a Google Search Console** — propiedad verificada en `https://jesusfelipeb.vercel.app/`. Estado al cierre de la sesión: "No se ha podido obtener" (esperando que Google reintente — normal hasta 24-48h después del fix). Sitemap responde 200 OK con `application/xml` válido, verificado con user-agent Googlebot.
+
+### Completado en sesiones anteriores
 - [x] **Hero rediseñado nivel 3** — display font Space Grotesk, headline rotativo (venden/convierten/escalan), aurora animada, mockup de browser tenue, foto con anillo conic gradient, tarjeta flotante "Sin agencia", marquee de casos con fade lateral, scroll indicator vertical
 - [x] **Sección Servicios** — copy legalmente seguro, "Asesoría" → "Consultoría", precios actualizados ($80 / $600 / $70), agentes de IA destacados, consultoría enfocada en pymes
 - [x] **Chat Widget con IA** — FAB + panel modal + streaming desde Groq Llama 3.3 70B + bubble invite "¿Alguna duda? Hablá con mi agente" + handover a WhatsApp después de 4 mensajes + lead detection con webhook a Apps Script (opcional) + SYSTEM_PROMPT robusto con reglas legales
 - [x] **SEO técnico profesional** — metadata completa (title template, OG, Twitter, canonical, robots), JSON-LD con LocalBusiness/Person/Service x3/FAQPage/WebSite, sitemap dinámico, robots.txt dinámico, viewport theme color, format detection
 - [x] **Branding split** — el sitio se llama `jesusfelipeb` en producción, el repo sigue siendo `soberania-total` (no se renombró)
-
-### Completado en sesiones anteriores
 - [x] Rebuild a sitio de conversión (7 secciones)
 - [x] WhatsApp integrado (+5491132924310)
 - [x] Auto-deploy Vercel
@@ -158,7 +160,7 @@ NEXT_PUBLIC_GOOGLE_VERIFICATION=         # opcional — código de Google Search
 ### Pendiente (técnico)
 - [ ] **Renombrar proyecto en Vercel a `jesusfelipeb`** (Settings → General → Project Name)
 - [ ] **Configurar `NEXT_PUBLIC_SITE_URL` en Vercel** = https://jesusfelipeb.vercel.app
-- [ ] **Verificar Google Search Console** y enviar sitemap.xml
+- [ ] **Verificar status del sitemap en GSC** — re-chequear pasadas 24-48h del 2026-04-27. Si sigue en "No se ha podido obtener", usar Inspección de URLs sobre `https://jesusfelipeb.vercel.app/sitemap.xml` y solicitar indexación.
 - [ ] **Crear Google Business Profile** (Maps + local SEO)
 - [ ] **Comprar dominio propio** (jesusfelipeb.com / .com.ar / .dev) y conectar en Vercel
 - [ ] (Opcional) Configurar `LEADS_WEBHOOK_URL` con Apps Script para guardar leads en Google Sheets

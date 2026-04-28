@@ -25,7 +25,7 @@ const services = [
       "Landing pages, ecommerce y sitios a medida",
       "Diseño mobile-first y carga <2s",
       "Integración con WhatsApp, redes y pagos",
-      "Panel de administración si lo necesitás",
+      "Panel de administración si lo necesitas",
     ],
     price: "Desde $80 USD",
     time: "Entrega en 5-14 días",
@@ -82,7 +82,7 @@ const services = [
       </svg>
     ),
     title: "Consultoría Financiera",
-    subtitle: "Entendé tus números. Tomá tus propias decisiones.",
+    subtitle: "Entiende tus números. Toma tus propias decisiones.",
     features: [
       "Diagnóstico financiero personal o de tu negocio",
       "Cómo funciona la inflación y cómo cubrirte",
