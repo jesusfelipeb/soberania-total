@@ -4,7 +4,7 @@
 
 Sitio web de **conversión directa** para vender los servicios de Felipe: desarrollo web, automatización con IA y consultoría financiera. Prioridad: generar ingresos inmediatos.
 
-**Narrativa central:** Felipe es venezolano, economista formado en ULA, vivió 2 colapsos económicos (Venezuela + Argentina 2020). Aprendió por necesidad. Construye herramientas reales, no teoría.
+**Narrativa central:** Felipe es venezolano, estudió economía en la Universidad de Los Andes (ULA) pero tuvo que dejar la carrera antes de graduarse por la crisis del país. NO es economista titulado. Vivió 2 colapsos económicos (Venezuela + Argentina 2020). Aprendió por necesidad. Construye herramientas reales, no teoría.
 
 **URL producción:** https://jesusfelipeb.vercel.app
 **Repositorio (no se renombró):** https://github.com/jesusfelipeb/soberania-total

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const facts = [
-  "Economista formado en la Universidad de Los Andes (Venezuela)",
+  "Estudios de economía en la Universidad de Los Andes (Venezuela), interrumpidos por la crisis del país",
   "Viví 2 colapsos económicos — Venezuela y Argentina 2020",
   "4+ años estudiando mercados financieros y cripto",
   "Desarrollo web profesional con Next.js y TypeScript",

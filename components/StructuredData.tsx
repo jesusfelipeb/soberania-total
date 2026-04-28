@@ -23,7 +23,7 @@ export default function StructuredData() {
       familyName: "Becerra",
       jobTitle: "Desarrollador Web e Ingeniero de Automatización con IA",
       description:
-        "Economista venezolano, desarrollador autodidacta. Construye sitios web, agentes de IA y da consultoría financiera para emprendedores y pymes en Argentina.",
+        "Desarrollador web autodidacta venezolano, con formación en economía. Construye sitios web, agentes de IA y da consultoría financiera para emprendedores y pymes en Argentina.",
       url: SITE_URL,
       image: `${SITE_URL}/assets/fotoperfil.jpg`,
       nationality: { "@type": "Country", name: "Venezuela" },
