@@ -136,11 +136,18 @@ NEXT_PUBLIC_GOOGLE_VERIFICATION=         # opcional — código de Google Search
 
 ---
 
-## Estado actual (2026-04-27)
+## Estado actual (2026-04-29)
 
-### Completado en esta sesión (2026-04-27)
+**Resumen:** landing técnicamente lista (8/10). Cuello de botella ahora = tráfico, no conversión. Próxima fase = outbound, no más iteración de la landing.
+
+### Completado en esta sesión (2026-04-29)
+- [x] **Fix mobile Hero** — la tarjeta flotante "Sin agencia" se desbordaba en pantallas chicas. Cambiada a `w-[min(86vw,220px)]` con padding y texto reducidos en mobile; desktop sin cambios. Commit `01f4d88`.
+- [x] **Estado del proyecto actualizado en Notion Command Center** — properties (Etapa, Genera Ingresos, Ingreso Estimado $600, Progreso 70%, Próximo Paso) + contenido de la página con el plan outbound completo. URL: https://app.notion.com/p/33e4b5064169818c9228f02b73c7ab6d
+- [x] **Plan Outbound — 7 días** definido y guardado en Notion. 6 sprints (Sprint 0 a Sprint 5). Objetivo: 50+ conversaciones reales → 1+ venta ($600 USD). Resumen en sección "Plan Outbound activo" abajo.
+
+### Completado en sesión 2026-04-27
 - [x] **Sitemap fix** — quitadas las URLs con fragmento (`#servicios`, `#casos`) que Google rechaza por no ser canónicas. Sitemap ahora tiene solo la home. Commit `d398494`.
-- [x] **Sitemap enviado a Google Search Console** — propiedad verificada en `https://jesusfelipeb.vercel.app/`. Estado al cierre de la sesión: "No se ha podido obtener" (esperando que Google reintente — normal hasta 24-48h después del fix). Sitemap responde 200 OK con `application/xml` válido, verificado con user-agent Googlebot.
+- [x] **Sitemap enviado a Google Search Console** — propiedad verificada en `https://jesusfelipeb.vercel.app/`. Estado al cierre de esa sesión: "No se ha podido obtener" (esperando que Google reintente). **A verificar al retomar:** ya pasaron las 48h, chequear si actualizó.
 
 ### Completado en sesiones anteriores
 - [x] **Hero rediseñado nivel 3** — display font Space Grotesk, headline rotativo (venden/convierten/escalan), aurora animada, mockup de browser tenue, foto con anillo conic gradient, tarjeta flotante "Sin agencia", marquee de casos con fade lateral, scroll indicator vertical
@@ -169,11 +176,48 @@ NEXT_PUBLIC_GOOGLE_VERIFICATION=         # opcional — código de Google Search
 - [ ] Limpiar componentes legacy (SobreMi, Pilares, LinksProductos, Newsletter, StarField, WhatsAppButton)
 
 ### Pendiente (negocio/ventas) — LA PRIORIDAD REAL
-- [ ] Mensajes directos a contactos ofreciendo servicios
-- [ ] Publicar en grupos de Facebook de emprendedores
-- [ ] Activar LinkedIn para venta local
-- [ ] Pedir reviews a clientes para Google Business Profile
-- [ ] Primer Reel de presentación
+Ver **"Plan Outbound activo"** abajo para detalle por sprint.
+
+---
+
+## Plan Outbound activo (iniciado 2026-04-29)
+
+**Fuente de verdad:** [Notion · Soberanía Total](https://app.notion.com/p/33e4b5064169818c9228f02b73c7ab6d).
+**Objetivo:** 50+ conversaciones reales → 1+ venta ($600 USD) en 7 días.
+**Principio:** warm > cold. Lo que funcione, escalar.
+**Métricas por sprint:** mensajes / respuestas / conversaciones / propuestas / cierres.
+
+### Sprint 0 — HOY (2-3h) · munición
+- [ ] Lista de 50 contactos warm en Google Sheets (nombre, canal, estado)
+- [ ] Redactar 3 plantillas de DM (warm WA / IG follower / LinkedIn frío)
+- [ ] Identificar 5 grupos (FB emprendedores, venezolanos en BA, Telegram negocios)
+- [ ] Pedir testimonios a Kim Cedeño + Finara + cliente Banana
+
+### Sprint 1 — Día 2 (3h) · primera ola DMs warm
+- [ ] 20 DMs WhatsApp warm
+- [ ] 15 DMs Instagram a seguidores activos
+- [ ] Verificar GSC sitemap
+- [ ] Crear Google Business Profile
+
+### Sprint 2 — Día 3 (2-3h) · LinkedIn + contenido
+- [ ] 15 conexiones LinkedIn + mensaje a dueños PYME
+- [ ] 1 post LinkedIn (caso Banana o Finara)
+- [ ] 1 Reel Instagram (problema → solución → demo 5 seg)
+
+### Sprint 3 — Día 4 (2h) · grupos
+- [ ] 5 posts en grupos FB/WA/Telegram (formato ayuda, no venta)
+- [ ] 10 comentarios estratégicos en posts de PYMEs
+- [ ] Subir testimonios al sitio si llegaron
+
+### Sprint 4 — Día 5-6 · doblar apuesta
+- [ ] Análisis: qué canal trajo más respuestas
+- [ ] 30 DMs adicionales en canal ganador
+- [ ] 2do post LinkedIn + 2do Reel
+- [ ] Follow-up a no-respuestas (48-72h)
+
+### Sprint 5 — Día 7 · review
+- [ ] Métricas finales: enviados / respuestas / propuestas / cierres
+- [ ] Decisión: escalar canal ganador o pivotar plantillas/oferta
 
 ---
 
