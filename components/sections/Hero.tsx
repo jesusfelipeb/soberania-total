@@ -216,16 +216,16 @@ export default function Hero() {
 
           {/* Floating metric card */}
           <div
-            className="glass-card absolute -bottom-6 left-1/2 w-[260px] -translate-x-1/2 rounded-xl px-5 py-4 md:-bottom-4 md:-left-8 md:translate-x-0 animate-fade-up"
+            className="glass-card absolute -bottom-5 left-1/2 w-[min(86vw,220px)] -translate-x-1/2 rounded-xl px-4 py-3 md:-bottom-4 md:-left-8 md:w-[260px] md:translate-x-0 md:px-5 md:py-4 animate-fade-up"
             style={{ animationDelay: "600ms" }}
           >
-            <div className="mb-1.5 flex items-center gap-2">
+            <div className="mb-1 flex items-center gap-2 md:mb-1.5">
               <span className="block h-1.5 w-1.5 rounded-full bg-neon" />
               <span className="text-[10px] font-medium uppercase tracking-luxury text-white/55">
                 Diferencia
               </span>
             </div>
-            <p className="text-sm leading-snug text-white/90">
+            <p className="text-xs leading-snug text-white/90 md:text-sm">
               <strong className="font-bold text-neon">Sin agencia.</strong>{" "}
               Trato directo con quien lo construye.
             </p>
