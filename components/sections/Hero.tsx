@@ -1,32 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import { getWhatsAppLink, WHATSAPP_MESSAGES } from "@/lib/config";
-
-const ROTATING_WORDS = ["venden.", "convierten.", "escalan."];
-
-const MARQUEE_CASES = [
-  { name: "Kim Cedeño", desc: "Life Coach & Tarotista" },
-  { name: "Finara", desc: "SaaS · Salud Financiera" },
-  { name: "Banana Express", desc: "Delivery · Palermo BA" },
-];
+import { getWhatsAppLink } from "@/lib/config";
 
 export default function Hero() {
-  const [wordIndex, setWordIndex] = useState(0);
-
-  useEffect(() => {
-    const reduce =
-      typeof window !== "undefined" &&
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) return;
-
-    const id = setInterval(() => {
-      setWordIndex((i) => (i + 1) % ROTATING_WORDS.length);
-    }, 2400);
-    return () => clearInterval(id);
-  }, []);
-
   return (
     <section className="relative flex min-h-[100svh] flex-col justify-center overflow-hidden px-6 py-24">
       {/* === Background layers === */}
@@ -79,9 +56,7 @@ export default function Hero() {
       {/* === Main content === */}
       <div className="relative z-10 mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-14 md:grid-cols-12 md:gap-12">
         {/* Left: text column */}
-        <div
-          className="order-2 text-center md:order-1 md:col-span-7 md:text-left"
-        >
+        <div className="order-2 text-center md:order-1 md:col-span-7 md:text-left">
           {/* Status badge */}
           <div
             className="mb-7 inline-flex items-center gap-2.5 rounded-full border border-neon/20 bg-neon/[0.06] px-3.5 py-1.5 text-[11px] font-medium text-neon backdrop-blur-sm animate-fade-up"
@@ -91,7 +66,7 @@ export default function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-neon opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-neon" />
             </span>
-            <span className="tracking-luxury uppercase">Disponible · Cupos limitados</span>
+            <span className="tracking-luxury uppercase">Para médicos, coaches y abogados</span>
           </div>
 
           {/* Kicker */}
@@ -99,63 +74,38 @@ export default function Hero() {
             className="mb-5 text-[11px] font-semibold uppercase tracking-luxury text-white/50 animate-fade-up sm:text-xs"
             style={{ animationDelay: "100ms" }}
           >
-            Desarrollo Web · IA · Finanzas
+            Sistemas de Captación Automatizados
           </p>
 
-          {/* Headline with rotating word */}
+          {/* Headline */}
           <h1
             className="mb-6 font-display text-5xl leading-[0.95] tracking-tight animate-fade-up sm:text-6xl lg:text-7xl"
             style={{ animationDelay: "200ms" }}
           >
-            <span className="block font-light text-white/95">Sitios web</span>
-            <span className="mt-1 flex items-baseline justify-center gap-3 md:justify-start">
-              <span className="font-light text-white/95">que</span>
-              <span className="relative inline-grid overflow-hidden align-baseline">
-                {ROTATING_WORDS.map((word, i) => (
-                  <span
-                    key={word}
-                    aria-hidden={i !== wordIndex}
-                    className="col-start-1 row-start-1 font-bold text-neon transition-all duration-500 ease-out"
-                    style={{
-                      opacity: i === wordIndex ? 1 : 0,
-                      transform:
-                        i === wordIndex
-                          ? "translateY(0)"
-                          : i < wordIndex
-                            ? "translateY(-40%)"
-                            : "translateY(40%)",
-                    }}
-                  >
-                    {word}
-                  </span>
-                ))}
-              </span>
+            <span className="block font-light text-white/95">Consigue más clientes de</span>
+            <span className="mt-1 block font-bold text-neon">
+              forma automática con IA
             </span>
           </h1>
 
-          {/* Subline with social proof */}
+          {/* Subline */}
           <p
             className="mb-9 max-w-xl text-base leading-relaxed text-white/65 animate-fade-up sm:text-lg"
             style={{ animationDelay: "300ms" }}
           >
-            Para{" "}
-            <strong className="font-semibold text-white">servicios profesionales</strong>,{" "}
-            <strong className="font-semibold text-white">SaaS</strong> y{" "}
-            <strong className="font-semibold text-white">comercio local</strong>.
-            <br className="hidden sm:block" />
-            14 días. Resultados reales. Hablamos primero.
+            Implemento sistemas que <strong className="font-semibold text-white">responden</strong>, <strong className="font-semibold text-white">filtran</strong> y <strong className="font-semibold text-white">convierten clientes por ti</strong> mientras trabajas.
           </p>
 
           {/* CTAs */}
           <div
-            className="flex flex-col gap-3 animate-fade-up sm:flex-row"
+            className="flex flex-col items-center gap-4 animate-fade-up sm:items-start"
             style={{ animationDelay: "400ms" }}
           >
             <a
-              href={getWhatsAppLink(WHATSAPP_MESSAGES.general)}
+              href={getWhatsAppLink("Hola, quiero saber cómo automatizar mi negocio con IA.")}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center gap-3 rounded-xl bg-neon px-8 py-4 text-base font-bold text-dark shadow-[0_0_30px_rgba(0,255,136,0.25)] transition-all duration-500 hover:scale-[1.03] hover:bg-neon-bright hover:shadow-[0_0_60px_rgba(0,255,136,0.5)] active:scale-[0.98]"
+              className="group inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-xl bg-neon px-8 py-4 text-base font-bold text-dark shadow-[0_0_30px_rgba(0,255,136,0.25)] transition-all duration-500 hover:scale-[1.03] hover:bg-neon-bright hover:shadow-[0_0_60px_rgba(0,255,136,0.5)] active:scale-[0.98]"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -166,17 +116,11 @@ export default function Hero() {
               >
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
               </svg>
-              Hablemos por WhatsApp
+              Automatizar mi negocio
             </a>
-            <a
-              href="#casos"
-              className="group inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.02] px-8 py-4 text-base font-medium text-white backdrop-blur-sm transition-all duration-500 hover:border-neon/40 hover:bg-white/[0.04] hover:text-neon"
-            >
-              Ver casos
-              <span className="inline-block transition-transform duration-500 group-hover:translate-x-1">
-                →
-              </span>
-            </a>
+            <p className="text-sm text-white/50">
+              Te muestro cómo aplicarlo en tu caso por WhatsApp
+            </p>
           </div>
         </div>
 
@@ -201,7 +145,7 @@ export default function Hero() {
             <div className="relative h-full w-full overflow-hidden rounded-full border border-white/10 bg-dark shadow-[0_0_80px_rgba(0,255,136,0.3)]">
               <Image
                 src="/assets/fotoperfil.jpg"
-                alt="Felipe — Desarrollo Web e IA"
+                alt="Felipe — Automatización e IA"
                 fill
                 className="object-cover"
                 priority
@@ -222,65 +166,15 @@ export default function Hero() {
             <div className="mb-1 flex items-center gap-2 md:mb-1.5">
               <span className="block h-1.5 w-1.5 rounded-full bg-neon" />
               <span className="text-[10px] font-medium uppercase tracking-luxury text-white/55">
-                Diferencia
+                Respuesta Inmediata
               </span>
             </div>
             <p className="text-xs leading-snug text-white/90 md:text-sm">
-              <strong className="font-bold text-neon">Sin agencia.</strong>{" "}
-              Trato directo con quien lo construye.
+              <strong className="font-bold text-neon">24/7 sin descanso.</strong>{" "}
+              Nunca más pierdas un cliente por responder tarde.
             </p>
           </div>
         </div>
-      </div>
-
-      {/* === Marquee — bottom of fold === */}
-      <div className="absolute inset-x-0 bottom-0 overflow-hidden border-t border-white/[0.06] bg-black/30 py-4 backdrop-blur-sm">
-        <div className="relative flex">
-          <div
-            className="flex shrink-0 items-center gap-12 whitespace-nowrap pr-12 animate-marquee"
-            aria-hidden={false}
-          >
-            {[...MARQUEE_CASES, ...MARQUEE_CASES, ...MARQUEE_CASES].map(
-              (item, i) => (
-                <div
-                  key={`a-${i}`}
-                  className="flex items-center gap-3 text-sm text-white/40"
-                >
-                  <span className="h-1 w-1 rounded-full bg-neon/60" />
-                  <span className="font-medium text-white/70">{item.name}</span>
-                  <span className="text-white/30">·</span>
-                  <span className="text-xs uppercase tracking-luxury text-white/40">
-                    {item.desc}
-                  </span>
-                </div>
-              ),
-            )}
-          </div>
-          <div
-            aria-hidden
-            className="flex shrink-0 items-center gap-12 whitespace-nowrap pr-12 animate-marquee"
-          >
-            {[...MARQUEE_CASES, ...MARQUEE_CASES, ...MARQUEE_CASES].map(
-              (item, i) => (
-                <div
-                  key={`b-${i}`}
-                  className="flex items-center gap-3 text-sm text-white/40"
-                >
-                  <span className="h-1 w-1 rounded-full bg-neon/60" />
-                  <span className="font-medium text-white/70">{item.name}</span>
-                  <span className="text-white/30">·</span>
-                  <span className="text-xs uppercase tracking-luxury text-white/40">
-                    {item.desc}
-                  </span>
-                </div>
-              ),
-            )}
-          </div>
-        </div>
-
-        {/* Edge fades */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-dark to-transparent" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-dark to-transparent" />
       </div>
 
       {/* Scroll indicator — vertical line with falling dot */}
@@ -293,3 +187,4 @@ export default function Hero() {
     </section>
   );
 }
+

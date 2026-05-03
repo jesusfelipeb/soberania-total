@@ -2,26 +2,26 @@ const cases = [
   {
     client: "Kim Cedeño",
     role: "Life Coach & Tarotista",
-    before: "Sin presencia web, dependía solo de boca a boca y redes sociales.",
-    after: "Sitio profesional con agenda online. Aumento de consultas en el primer mes.",
-    result: "+10 clientes nuevos/mes",
-    service: "Desarrollo Web",
+    before: "Respondía mensajes a mano, perdiendo horas al día y clientes por demoras.",
+    after: "Sistema implementado que recibe a los clientes y agenda sesiones automáticamente sin su intervención.",
+    result: "+10 consultas nuevas al mes",
+    service: "Captación Automatizada",
   },
   {
     client: "Finara",
-    role: "SaaS de Salud Financiera",
-    before: "Idea en papel, sin producto funcional, sin validación.",
-    after: "MVP completo con dashboard, autenticación y base de datos en producción.",
-    result: "De idea a producto en 3 semanas",
-    service: "Desarrollo Web",
+    role: "Startup de Salud Financiera",
+    before: "No tenían un sistema para capturar ni procesar el interés de nuevos prospectos de forma eficiente.",
+    after: "Plataforma instalada que recibe visitantes, captura sus datos y los clasifica listos para la venta.",
+    result: "Sistema validado en 3 semanas",
+    service: "Plataforma de Leads",
   },
   {
     client: "Banana Express",
-    role: "Verdulería con delivery en Palermo, Buenos Aires",
-    before: "Sin presencia online, dependía solo del local físico y boca a boca.",
-    after: "Sitio web con catálogo de boxes, pedidos directos por WhatsApp y entrega el mismo día.",
-    result: "Pedidos online desde el día 1",
-    service: "Desarrollo Web",
+    role: "Delivery de Alimentos",
+    before: "Tomaban pedidos manuales. Colapso en horas pico y clientes perdidos por la espera en WhatsApp.",
+    after: "Proceso donde el cliente elige rápido y el sistema envía la solicitud lista para procesar.",
+    result: "Ventas automatizadas desde el día 1",
+    service: "Pedidos por WhatsApp",
   },
 ];
 
@@ -33,10 +33,10 @@ export default function CaseStudies() {
           Resultados reales
         </p>
         <h2 className="mb-4 text-center text-3xl font-bold tracking-tight sm:text-4xl">
-          Lo que ya hice para otros
+          Sistemas funcionando ahora mismo
         </h2>
         <p className="mx-auto mb-14 max-w-lg text-center text-muted">
-          No prometo — muestro. Estos son proyectos reales con resultados medibles.
+          No te hablo de teoría. Estos son negocios reales que hoy dedican su tiempo a trabajar, no a responder mensajes.
         </p>
 
         <div className="grid gap-6 md:grid-cols-3">
@@ -58,7 +58,7 @@ export default function CaseStudies() {
                   <span className="text-white/60">{c.before}</span>
                 </div>
                 <div>
-                  <span className="font-medium text-neon">Después: </span>
+                  <span className="font-medium text-neon">Con el sistema: </span>
                   <span className="text-white/60">{c.after}</span>
                 </div>
               </div>

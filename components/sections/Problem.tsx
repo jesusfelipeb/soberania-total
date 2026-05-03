@@ -10,20 +10,11 @@ export default function Problem() {
           strokeWidth={1.25}
           className="h-6 w-6"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126z"
-          />
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12 15.75h.007v.008H12v-.008z"
-          />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
         </svg>
       ),
-      text: "Tu negocio es invisible online",
-      sub: "La gente busca en Google y no te encuentra. Tus competidores sí aparecen.",
+      text: "Dependes de recomendaciones",
+      sub: "No tienes control sobre cuántos clientes llegan cada mes.",
     },
     {
       icon: (
@@ -42,8 +33,8 @@ export default function Problem() {
           />
         </svg>
       ),
-      text: "Pierdes horas respondiendo mensajes",
-      sub: "Preguntas repetitivas, citas sin confirmar, leads que se enfrían.",
+      text: "Pierdes clientes por responder tarde",
+      sub: "Tardas horas en responder y el cliente se va con otra opción.",
     },
     {
       icon: (
@@ -55,15 +46,27 @@ export default function Problem() {
           strokeWidth={1.25}
           className="h-6 w-6"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3 3v18h18M7 14l4-4 3 3 5-6"
-          />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
         </svg>
       ),
-      text: "Sabes que necesitas crecer, pero no sabes cómo",
-      sub: "Información hay de sobra. Lo que falta es una estrategia clara.",
+      text: "No tienes un sistema de ventas",
+      sub: "Las ventas son aleatorias. No hay un proceso para convertirlos predeciblemente.",
+    },
+    {
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={1.25}
+          className="h-6 w-6"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+        </svg>
+      ),
+      text: "Todo depende de ti",
+      sub: "Si no estás contestando mensajes o vendiendo, el negocio se frena.",
     },
   ];
 
@@ -79,11 +82,10 @@ export default function Problem() {
           ¿Te suena <span className="font-black text-neon">familiar?</span>
         </h2>
         <p className="mx-auto mb-16 max-w-xl text-center text-white/50">
-          Si tu negocio tiene alguno de estos problemas, puedo ayudarte a
-          resolverlo esta semana.
+          Si te identificas con alguna de estas situaciones, tu negocio está atascado.
         </p>
 
-        <div className="grid gap-6 sm:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2">
           {problems.map((p) => (
             <div
               key={p.text}
@@ -98,6 +100,12 @@ export default function Problem() {
               <p className="text-sm leading-relaxed text-white/55">{p.sub}</p>
             </div>
           ))}
+        </div>
+        
+        <div className="mt-16 text-center">
+          <p className="inline-block rounded-xl border border-neon/20 bg-neon/[0.03] px-6 py-4 text-lg font-medium text-white/90">
+            Si no tienes un sistema, <span className="font-bold text-neon">estás perdiendo dinero todos los días.</span>
+          </p>
         </div>
       </div>
     </section>

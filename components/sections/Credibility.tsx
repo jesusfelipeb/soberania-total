@@ -1,61 +1,42 @@
-import Image from "next/image";
+export default function Benefits() {
+  const benefits = [
+    {
+      title: "Más clientes sin trabajar más",
+      desc: "El sistema atiende, filtra y convierte por ti. Tu única tarea es recibir a los prospectos calificados y cerrar el trato.",
+    },
+    {
+      title: "Respuesta inmediata 24/7",
+      desc: "Mientras descansas o estás en consulta, el agente responde en segundos y nunca deja a un prospecto esperando.",
+    },
+    {
+      title: "No pierdes oportunidades",
+      desc: "Si alguien tiene interés, el sistema captura sus datos y le da seguimiento antes de que busque a tu competencia.",
+    },
+    {
+      title: "Escalar sin contratar empleados",
+      desc: "Maneja el volumen de 5 agentes de ventas sin pagar sueldos, cargas sociales ni tener que entrenar personal.",
+    },
+  ];
 
-const facts = [
-  "Estudios de economía en la Universidad de Los Andes (Venezuela), interrumpidos por la crisis del país",
-  "Viví 2 colapsos económicos — Venezuela y Argentina 2020",
-  "4+ años estudiando mercados financieros y cripto",
-  "Desarrollo web profesional con Next.js y TypeScript",
-  "Automatización con IA para negocios reales",
-];
-
-export default function Credibility() {
   return (
     <section className="bg-dark py-16 sm:py-24">
-      <div className="mx-auto flex max-w-5xl flex-col items-center gap-10 px-6 md:flex-row md:gap-16">
-        {/* Photo */}
-        <div className="flex-shrink-0">
-          <div className="relative h-72 w-72 overflow-hidden rounded-2xl border border-dark-border sm:h-80 sm:w-80">
-            <Image
-              src="/assets/fotoperfil.jpg"
-              alt="Felipe"
-              fill
-              className="object-cover"
-              sizes="320px"
-            />
-          </div>
-        </div>
+      <div className="mx-auto max-w-5xl px-6">
+        <p className="mb-4 text-center text-xs font-medium uppercase tracking-luxury text-neon sm:text-sm">
+          Beneficios
+        </p>
+        <h2 className="mb-16 text-center text-3xl font-light tracking-tight sm:text-4xl">
+          El resultado: <span className="font-black text-neon">Tranquilidad y Crecimiento</span>
+        </h2>
 
-        {/* Text */}
-        <div>
-          <p className="mb-3 text-sm font-medium uppercase tracking-widest text-neon">
-            Quién soy
-          </p>
-          <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">
-            Construí resiliencia porque
-            <br />
-            <span className="text-neon">no me quedó otra opción.</span>
-          </h2>
-
-          <p className="mb-6 max-w-lg text-base leading-relaxed text-muted">
-            Nací en Venezuela. Vi cómo el dinero dejaba de funcionar, cómo los
-            ahorros se evaporaban, cómo un país entero perdía la soberanía sobre
-            su propia vida. Emigré a Argentina buscando estabilidad y me encontré
-            con una pandemia. Aprendí por necesidad, no por teoría.
-          </p>
-          <p className="mb-8 max-w-lg text-base leading-relaxed text-muted">
-            Hoy uso esa experiencia para construir herramientas reales: sitios web
-            que generan clientes, automatización que ahorra tiempo, y conocimiento
-            financiero que protege tu dinero.
-          </p>
-
-          <ul className="space-y-3">
-            {facts.map((f) => (
-              <li key={f} className="flex items-start gap-3 text-sm text-white/70">
+        <div className="grid gap-8 sm:grid-cols-2">
+          {benefits.map((b) => (
+            <div key={b.title} className="glass-card flex flex-col rounded-2xl p-8">
+              <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-neon/10 text-neon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
-                  className="mt-0.5 h-4 w-4 flex-shrink-0 text-neon"
+                  className="h-5 w-5"
                 >
                   <path
                     fillRule="evenodd"
@@ -63,10 +44,11 @@ export default function Credibility() {
                     clipRule="evenodd"
                   />
                 </svg>
-                {f}
-              </li>
-            ))}
-          </ul>
+              </div>
+              <h3 className="mb-3 text-xl font-bold text-white/90">{b.title}</h3>
+              <p className="text-sm leading-relaxed text-white/60">{b.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -1,8 +1,8 @@
 import Hero from "@/components/sections/Hero";
 import Problem from "@/components/sections/Problem";
 import Services from "@/components/sections/Services";
-import CaseStudies from "@/components/sections/CaseStudies";
 import Credibility from "@/components/sections/Credibility";
+import CaseStudies from "@/components/sections/CaseStudies";
 import CTAFinal from "@/components/sections/CTAFinal";
 import Footer from "@/components/layout/Footer";
 import ChatWidget from "@/components/ChatWidget";
@@ -13,8 +13,8 @@ export default function Home() {
       <Hero />
       <Problem />
       <Services />
-      <CaseStudies />
       <Credibility />
+      <CaseStudies />
       <CTAFinal />
       <Footer />
       <ChatWidget />
